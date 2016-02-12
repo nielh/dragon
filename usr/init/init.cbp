@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="init" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="../../../bin/init.exe" prefix_auto="0" extension_auto="0" />
+				<Option object_output="Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option use_console_runner="0" />
+				<Compiler>
+					<Add option="-O0 -g -std=c99 -ffreestanding -nostdlib -mno-red-zone -mno-ms-bitfields" />
+				</Compiler>
+				<Linker>
+					<Add option="-nostdlib -O0 -g -ffreestanding -e _start  -Wl,-Map=Debug/init.map -Wl,--image-base=0x400000 -Wl,--section-alignment=0x1000 -Wl,--file-alignment=0x1000" />
+				</Linker>
+				<ExtraCommands>
+					<Add after="cmd /c copy /y $(TARGET_OUTPUT_FILE) f:\" />
+				</ExtraCommands>
+			</Target>
+		</Build>
+		<Unit filename="libc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libc.h" />
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="os.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="os.h" />
+		<Unit filename="start.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

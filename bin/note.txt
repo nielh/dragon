@@ -1,0 +1,9 @@
+// copy command line in Codeblock
+cmd /c copy /y $(TARGET_OUTPUT_FILE) f:\
+
+
+// for VMware gdbstub
+debugStub.listen.guest64 = "TRUE"
+monitor.debugOnStartGuest64 = "TRUE"
+
+

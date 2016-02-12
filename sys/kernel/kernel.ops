@@ -1,0 +1,1 @@
+-shared -nostdlib -g -ffreestanding -e _start -T kernel.lds -Wl,-Map=Debug/kernel.map -Wl,--exclude-all-symbols -Wl,--image-base=0xffff800000100000 -Wl,--section-alignment=0x1000 -Wl,--file-alignment=0x1000

@@ -1,0 +1,4 @@
+set print pretty on
+file kernel.sys
+add-symbol-file init.exe 0x401000
+target remote COM2

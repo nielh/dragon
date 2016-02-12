@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="posix" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="../../bin/posix.a" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="" />
+				<Option object_output="obj/Debug/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-Wall -O0 -g -std=c99 -ffreestanding -nostdlib -mno-red-zone -mno-ms-bitfields" />
+					<Add directory="../include/posix" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/posix" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="../include/posix/alloca.h" />
+		<Unit filename="../include/posix/assert.h" />
+		<Unit filename="../include/posix/crtbase.h" />
+		<Unit filename="../include/posix/ctype.h" />
+		<Unit filename="../include/posix/errno.h" />
+		<Unit filename="../include/posix/fcntl.h" />
+		<Unit filename="../include/posix/float.h" />
+		<Unit filename="../include/posix/limits.h" />
+		<Unit filename="../include/posix/locale.h" />
+		<Unit filename="../include/posix/math.h" />
+		<Unit filename="../include/posix/os.h" />
+		<Unit filename="../include/posix/setjmp.h" />
+		<Unit filename="../include/posix/signal.h" />
+		<Unit filename="../include/posix/stdarg.h" />
+		<Unit filename="../include/posix/stddef.h" />
+		<Unit filename="../include/posix/stdio.h" />
+		<Unit filename="../include/posix/stdlib.h" />
+		<Unit filename="../include/posix/string.h" />
+		<Unit filename="../include/posix/unistd.h" />
+		<Unit filename="../include/posix/utime.h" />
+		<Unit filename="assert.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="crt0.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ctype.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="os.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="printf.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="scanf.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="setjmp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="setjmp2.S" />
+		<Unit filename="start.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="stdio.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="stdlib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="string.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="strtod.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="strtol.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="time.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="unistd.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="vsprintf.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
